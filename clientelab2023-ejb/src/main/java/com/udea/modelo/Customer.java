@@ -93,6 +93,24 @@ public class Customer implements Serializable {
         return customerId;
     }
 
+//Esto se agregó
+//------------------------------------------------------   
+public String getDiscount(){
+  return this.discountCode.getDiscountCode();
+}    
+public void setDiscount(String code){
+this.discountCode= new DiscountCode(code);
+}
+
+public String getZip1(){
+  return this.zip.getZipCode();
+}
+
+public void setZip1(String zip){
+  this.zip= new MicroMarket(zip);
+}
+ //------------------------------------------------------   
+    
     public void setCustomerId(Integer customerId) {
         this.customerId = customerId;
     }
